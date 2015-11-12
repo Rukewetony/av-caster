@@ -275,8 +275,6 @@ DEBUG_TRACE_VALIDATE_ENVIRONMENT
 
 void AvCaster::DisplayAlert()
 {
-if (Alerts.size()) DBG("AvCaster::DisplayAlert() Alerts.size()=" + String(Alerts.size())) ;
-
   if (IsAlertModal || Alerts.size() == 0) return ;
 
   GUI::AlertType message_type = Alerts[0]->messageType ;
